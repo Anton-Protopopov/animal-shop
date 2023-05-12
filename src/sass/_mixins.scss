@@ -1,0 +1,96 @@
+@mixin text-link {
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $fun-green;
+  }
+
+  &:focus {
+    color: $fun-green;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    color: $silver-chalice;
+  }
+}
+
+@mixin card-info {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    opacity: 10;
+    h3 {
+      color: $fun-green;
+    }
+  }
+
+  &:focus {
+    transform: translateY(-5px);
+    opacity: 10;
+    h3 {
+      color: $fun-green;
+    }
+  }
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(-5px);
+    opacity: 10;
+    h3 {
+      color: $silver-chalice;
+    }
+  }
+}
+@mixin card {
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    h3 {
+      color: $fun-green;
+    }
+  }
+
+  &:focus {
+    h3 {
+      color: $fun-green;
+    }
+  }
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    h3 {
+      color: $silver-chalice;
+    }
+  }
+}
+
+@mixin btn {
+    transition: background-color  0.3s ease-in-out, border  0.3s ease-in-out;
+  
+    &:hover {
+      background-color: $fun-green;
+    }
+  
+    &:focus-visible {
+      outline: none;
+    background-color: $fun-green;
+    }
+  
+    &:focus {
+        outline: none;
+    background-color: $fun-green;
+    }
+  
+    &:active {
+        outline: none;
+      background-color: $silver-chalice;
+    }
+  }

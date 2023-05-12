@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script defer src="/node_modules/jquery/dist/jquery.js"></script>
+    <script
+      defer
+      src="/node_modules/owl.carousel/dist/owl.carousel.min.js"
+    ></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script defer src="js/index.js"></script>
+    <title>Интернет-магазин сельскохозяйственных животных</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__comtainer">
+        <div class="header__navi">
+          <a href="#" class="header__logo"
+            ><img
+              class="header__img"
+              src="img/logo.svg"
+              alt="Интернет-магазин сельскохозяйственных животных"
+          /></a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#"> Каталог </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Акции</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#map1">Наши магазины</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#blog">Блог</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#info">О компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <a href="#" class="header__tel">+7 800 555 35 35</a>
+          <button class="btn header__btn">Напишите нам</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="poster" class="poster">
+        <div class="slideshow-container container">
+          <div class="mySlides fade">
+            <img src="img/image 4.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="img/image 5.jpg" style="width: 100%" />
+          </div>
+          <div class="pagination">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </section>
+      <section class="hero" id="hero">
+        <div class="container hero__container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/Rectangle 37.jpg" alt="" class="hero__img" />
+                <h3 class="hero__title">Ездовая корова бесплатно!</h3>
+                <p class="hero__text">
+                  Получи ездовую корову бесплатно при покупке стаи собак в
+                  розничных магазинах сети
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 37 (1).jpg" alt="" class="hero__img" />
+                <h3 class="hero__title">Бойцовые гуси снова в продаже!</h3>
+                <p class="hero__text">
+                  Для всех тех, кто устал от сторожевых собак и боев между
+                  петухами, мы снова предлагаем вам отборных гусей
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 37 (2).jpg" alt="" class="hero__img" />
+                <h3 class="hero__title">15 мая сайт не работает</h3>
+                <p class="hero__text">
+                  Сайт отправится на доработку, чтобы все работало еще быстрее,
+                  для заказа шлите факс или голубей
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 37.jpg" alt="" class="hero__img" />
+                <h3 class="hero__title">Огромное поступление кормов</h3>
+                <p class="hero__text">
+                  У нас появилось множество новых товаров для крупных животных,
+                  которые помогут им оставаться здоровыми и сильными.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__pagination">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="map" id="map1">
+        <div class="container map__container">
+          <div class="title-box">
+            <h1 class="title">НАШИ МАГАЗИНЫ</h1>
+            <span
+              ><svg
+                width="7"
+                height="11"
+                viewBox="0 0 7 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.341709 10.6802C-0.113903 10.2538 -0.113903 9.56249 0.341709 9.1361L4.18342 5.54076L0.341709 1.94542C-0.113903 1.51902 -0.113903 0.827703 0.341709 0.401309C0.79732 -0.0250845 1.53601 -0.0250845 1.99162 0.401309L6.65829 4.7687C6.87708 4.97346 7 5.25118 7 5.54076C7 5.83033 6.87708 6.10805 6.65829 6.31281L1.99162 10.6802C1.53601 11.1066 0.79732 11.1066 0.341709 10.6802Z"
+                  fill="#008E4D"
+                /></svg
+            ></span>
+          </div>
+          <div id="map" style="width: 1310px; height: 500px"></div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <div class="container blog__container">
+          <div class="title-box">
+            <h1 class="title">БЛОГ</h1>
+            <span
+              ><svg
+                width="7"
+                height="11"
+                viewBox="0 0 7 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.341709 10.6802C-0.113903 10.2538 -0.113903 9.56249 0.341709 9.1361L4.18342 5.54076L0.341709 1.94542C-0.113903 1.51902 -0.113903 0.827703 0.341709 0.401309C0.79732 -0.0250845 1.53601 -0.0250845 1.99162 0.401309L6.65829 4.7687C6.87708 4.97346 7 5.25118 7 5.54076C7 5.83033 6.87708 6.10805 6.65829 6.31281L1.99162 10.6802C1.53601 11.1066 0.79732 11.1066 0.341709 10.6802Z"
+                  fill="#008E4D"
+                /></svg
+            ></span>
+          </div>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <img src="img/2.jpg" alt="" class="blog__img" />
+              <h3 class="blog__title">Новая рубрика на сайте</h3>
+              <p class="blog__text">
+                Вы сможете найти информацию о товарах для крупных животных, а
+                также отзывы клиентов
+              </p>
+              <span class="blog__date">14 мая 2023</span>
+            </li>
+            <li class="blog__item">
+              <img src="img/2 (1).jpg" alt="" class="blog__img" />
+              <h3 class="blog__title">Новые сотрудничества</h3>
+              <p class="blog__text">
+                Мы готовы предложить вам еще больше выбора продуктов от фермеров
+                со всей страны
+              </p>
+              <span class="blog__date">21 апреля 2023</span>
+            </li>
+            <li class="blog__item">
+              <img src="img/2 (2).jpg" alt="" class="blog__img" />
+              <h3 class="blog__title">Запуск программы лояльности</h3>
+              <p class="blog__text">
+                Мы запустили программу лояльности, по которой раз в месяц вы
+                сможете получить корову бесплатно
+              </p>
+              <span class="blog__date">05 февраля 2023</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="info" id="info">
+        <div class="container info__container">
+          <div class="info__left">
+            <div class="title-box info__title-box">
+              <h1 class="title info__title">О КОМПАНИИ</h1>
+              <span
+                ><svg
+                  width="7"
+                  height="11"
+                  viewBox="0 0 7 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.341709 10.6802C-0.113903 10.2538 -0.113903 9.56249 0.341709 9.1361L4.18342 5.54076L0.341709 1.94542C-0.113903 1.51902 -0.113903 0.827703 0.341709 0.401309C0.79732 -0.0250845 1.53601 -0.0250845 1.99162 0.401309L6.65829 4.7687C6.87708 4.97346 7 5.25118 7 5.54076C7 5.83033 6.87708 6.10805 6.65829 6.31281L1.99162 10.6802C1.53601 11.1066 0.79732 11.1066 0.341709 10.6802Z"
+                    fill="#008E4D"
+                  /></svg
+              ></span>
+            </div>
+            <p class="info__text">
+              Наш интернет-магазин сельскохозяйственных животных является
+              профессиональным поставщиком крупных домашних животных для
+              фермеров и частных лиц. Мы сотрудничаем с проверенными и надежными
+              поставщиками, чтобы предоставить нашим клиентам только лучших
+              животных.
+            </p>
+            <p class="info__text">
+              Мы гарантируем качество наших животных и предоставляем широкий
+              ассортимент по доступной цене. Наша команда состоит из
+              профессиональных консультантов, готовых помочь вам с выбором
+              животных и ответить на любые ваши вопросы.
+            </p>
+            <p class="info__text">
+              Мы стремимся обеспечить наших клиентов качественными продуктами и
+              услугами, и наш приоритет — это ваше удовлетворение и успех в
+              бизнесе.
+            </p>
+            <a href="" class="info__link">Узнать больше</a>
+          </div>
+          <div class="info__right">
+            <img src="img/!TG3C6799.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container footer__comtainer">
+        <div class="footer__navi">
+          <a href="#" class="footer__logo"
+            ><img
+              class="footer__img"
+              src="img/logo.svg"
+              alt="Интернет-магазин сельскохозяйственных животных"
+          /></a>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Каталог </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Акции</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#map1">Наши магазины</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#blog">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#info">О компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__right">
+          <a href="#" class="footer__tel">8 800 555 35 35</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

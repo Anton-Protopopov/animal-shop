@@ -1,0 +1,64 @@
+.header {
+  padding-top: 21px;
+  &__comtainer {
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    width: 64px;
+    height: 64px;
+  }
+
+  &__navi {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $cod-gray;
+    @include text-link
+  }
+
+  &__tel {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $cod-gray;
+    @include text-link
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__btn {
+    padding: 12px 29px 13px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    background-color: $deep-sea;
+    border-radius: 1000px;
+    @include btn;
+  }
+}

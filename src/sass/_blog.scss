@@ -1,0 +1,56 @@
+.blog {
+    &__container{
+        margin-bottom: 72px;
+    }
+  &__title {
+    margin: 0;
+  }
+  &__list {
+    display: flex;
+    gap: 79px;
+  }
+
+  &__item {
+    max-width: 384px;
+    padding: 18px 17px 22px;
+    border-radius: 24px;
+    background-color: $gallery;
+    @include card-info;
+  }
+
+  &__img {
+    border-radius: 19px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    padding-left: 5px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 26px;
+    padding-left: 7px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__date {
+    padding-left: 6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
